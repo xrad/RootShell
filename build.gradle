@@ -38,8 +38,8 @@ android {
 
 dependencies {
     def supportversion = "25.4.0"
-    androidTestCompile "com.android.support:support-annotations:$supportversion"
-    androidTestCompile 'com.android.support.test:runner:1.0.1'
-    androidTestCompile 'com.android.support.test:rules:1.0.1'
-    testCompile 'junit:junit:4.12'
+    androidTestImplementation "com.android.support:support-annotations:$supportversion"
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test:rules:1.0.1'
+    testImplementation 'junit:junit:4.12'
 }
