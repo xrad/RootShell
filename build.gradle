@@ -9,7 +9,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.1.4'
+        classpath "com.android.tools.build:gradle:${rootProject.ext.gradleVersion}"
         classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
     }
 }
@@ -37,8 +37,7 @@ android {
 }
 
 dependencies {
-    def supportversion = "25.4.0"
-    androidTestImplementation "com.android.support:support-annotations:$supportversion"
+    androidTestImplementation "com.android.support:support-annotations:${rootProject.ext.supportLibVersion}"
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test:rules:1.0.2'
     testImplementation 'junit:junit:4.12'
